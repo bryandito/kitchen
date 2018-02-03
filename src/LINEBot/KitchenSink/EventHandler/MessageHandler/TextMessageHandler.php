@@ -115,7 +115,7 @@ class TextMessageHandler implements EventHandler
                 $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
             case 'carousel':
-                $imageUrl = UrlBuilder::buildUrl($this->req, ['static', 'buttons', '1040.jpg']);
+                $imageUrl ='https://akubuntel.files.wordpress.com/2013/03/siluet.png?w=1400';
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('foo', 'bar', $imageUrl, [
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
