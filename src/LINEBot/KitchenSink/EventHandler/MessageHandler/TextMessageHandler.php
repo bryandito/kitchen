@@ -103,7 +103,7 @@ class TextMessageHandler implements EventHandler
                 $buttonTemplateBuilder = new ButtonTemplateBuilder(
                     'My button sample',
                     'Hello my button',
-                    $imageUrl,
+                    'https://pre00.deviantart.net/f286/th/pre/i/2013/113/4/b/ra_kartini_in_wpap_by_ihsanulhakim-d62pkfh.jpg',
                     [
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
                         new PostbackTemplateActionBuilder('Buy', 'action=buy&itemid=123'),
