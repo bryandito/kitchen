@@ -108,7 +108,7 @@ class TextMessageHandler implements EventHandler
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
                         new PostbackTemplateActionBuilder('Buy', 'action=buy&itemid=123'),
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        new MessageTemplateActionBuilder('Say message', 'hello hello'),
+                        new MessageTemplateActionBuilder('Say help','help'),
                     ]
                 );
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
