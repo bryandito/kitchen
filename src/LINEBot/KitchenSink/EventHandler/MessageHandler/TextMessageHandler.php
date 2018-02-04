@@ -119,19 +119,15 @@ class TextMessageHandler implements EventHandler
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan', 'Di Tempat Kerja', $imageUrl1, [
                         new UriTemplateActionBuilder('Angka & Infografik', 'https://line.me'),
-                        new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
-                    ]),
+                                 ]),
                     new CarouselColumnTemplateBuilder('buz', 'qux', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        new MessageTemplateActionBuilder('Say message', 'hello hello'),
                     ]),
                     new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
                     new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
