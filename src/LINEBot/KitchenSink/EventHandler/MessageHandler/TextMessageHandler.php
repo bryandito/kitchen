@@ -119,23 +119,23 @@ class TextMessageHandler implements EventHandler
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan', 'Di Tempat Kerja', $imageUrl1, [
                         new UriTemplateActionBuilder('Read', 'https://line.me'),
-                        new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
+                        //new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
                     ]),
                     new CarouselColumnTemplateBuilder('Standard Oprasional Prosedur Perusahaan', 'Apakabar?', $imageUrl1, [
                         new UriTemplateActionBuilder('Read', 'https://line.me'),
-                        new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
+                        //new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
                     ]),
                     new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan di Indonesia', 'Fenomena dan Tantangan', $imageUrl1, [
-                        new UriTemplateActionBuilder('Read', 'https://line.me'),
-                        new MessageTemplateActionBuilder('Say message', 'coba'),
+                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                        //new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
-                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Seksual di Tempat Kerja', 'Tips', $imageUrl1, [
-                        new UriTemplateActionBuilder('Read', 'https://line.me'),
-                        new MessageTemplateActionBuilder('Say message', 'coba'),
+                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Seksual di Tempat Kerja', 'siapa', $imageUrl1, [
+                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                        //new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
-                $this->bot->replyMessage($replyToken, $templateMessage);
+                $this->bot->replyMessage($replyToken);
                 break;
             case 'imagemap':
                 $richMessageUrl = UrlBuilder::buildUrl($this->req, ['static', 'rich']);
