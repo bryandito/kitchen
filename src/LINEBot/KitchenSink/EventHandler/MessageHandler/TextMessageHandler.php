@@ -129,6 +129,10 @@ class TextMessageHandler implements EventHandler
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
                         new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
+                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl, [
+                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                        new MessageTemplateActionBuilder('Say message', 'coba'),
+                    ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
                 $this->bot->replyMessage($replyToken, $templateMessage);
