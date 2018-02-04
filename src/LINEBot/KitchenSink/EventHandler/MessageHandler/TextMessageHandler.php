@@ -135,7 +135,7 @@ class TextMessageHandler implements EventHandler
                     ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
-                $this->bot->replyMessage($replyToken,  $templateMessage);
+                $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
             case 'imagemap':
                 $richMessageUrl = UrlBuilder::buildUrl($this->req, ['static', 'rich']);
