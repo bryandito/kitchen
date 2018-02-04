@@ -91,7 +91,7 @@ class TextMessageHandler implements EventHandler
                     $replyToken,
                     new TemplateMessageBuilder(
                         'Confirm alt text',
-                        new ConfirmTemplateBuilder('Do it?', [
+                        new ConfirmTemplateBuilder('Menarik ya, kak! Tapi, apakah kakak suka dengan lingkungan kerja yang sekarang?', [
                             new MessageTemplateActionBuilder('Yes', 'Yes!'),
                             new MessageTemplateActionBuilder('No', 'No!'),
                         ])
@@ -117,17 +117,17 @@ class TextMessageHandler implements EventHandler
             case 'menu':
                 $imageUrl1 ='https://i.pinimg.com/736x/1e/48/6c/1e486c580947e82713415c556670fcf9--pin-up-tattoos-pinup-rockabilly.jpg';
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
-                    new CarouselColumnTemplateBuilder('Kekerasan Perempuan', 'Di Tempat Kerja', $imageUrl1, [
-                        new UriTemplateActionBuilder('Angka & Infografik', 'https://line.me'),
-                                 ]),
-                    new CarouselColumnTemplateBuilder('buz', 'qux', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan di Tempat Kerja', 'Angka dan Infografik', $imageUrl1, [
+                        new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                    new CarouselColumnTemplateBuilder('Setandar Operasional Prosedur Bagi Buruh', 'Apakabar?', $imageUrl1, [
+                        new PostbackTemplateActionBuilder('Next', 'action=add&itemid=123'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                    new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan di Indonesia', 'Fenomena & Tantangan', $imageUrl1, [
+                        new PostbackTemplateActionBuilder('Next', 'action=add&itemid=123'),
+                    ]),
+                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan di Tempat Kerja', 'Tips', $imageUrl1, [
+                        new PostbackTemplateActionBuilder('Next', 'action=add&itemid=123'),
                     ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
