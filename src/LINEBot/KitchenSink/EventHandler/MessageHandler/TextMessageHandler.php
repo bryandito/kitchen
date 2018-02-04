@@ -115,7 +115,7 @@ class TextMessageHandler implements EventHandler
                 $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
             case 'menu':
-                $imageUrl ='https://akubuntel.files.wordpress.com/2013/03/siluet.png?w=1400';
+                $imageUrl1 ='https://i.pinimg.com/736x/1e/48/6c/1e486c580947e82713415c556670fcf9--pin-up-tattoos-pinup-rockabilly.jpg';
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('foo', 'bar', $imageUrl, [
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
