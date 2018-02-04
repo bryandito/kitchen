@@ -118,19 +118,19 @@ class TextMessageHandler implements EventHandler
                 $imageUrl1 ='https://i.pinimg.com/736x/1e/48/6c/1e486c580947e82713415c556670fcf9--pin-up-tattoos-pinup-rockabilly.jpg';
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan', 'Di Tempat Kerja', $imageUrl1, [
-                        new UriTemplateActionBuilder('Angka & Infografik', 'https://line.me'),
+                        new UriTemplateActionBuilder('Read', 'https://line.me'),
                         new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
                     ]),
                     new CarouselColumnTemplateBuilder('Standard Oprasional Prosedur Perusahaan', 'Apakabar?', $imageUrl1, [
-                        new UriTemplateActionBuilder('Angka & Infograf', 'https://line.me'),
+                        new UriTemplateActionBuilder('Read', 'https://line.me'),
                         new PostbackTemplateActionBuilder('option1', 'action=buy&itemid=123'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                    new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan di Indonesia', 'Fenomena dan Tantangan', $imageUrl1, [
+                        new UriTemplateActionBuilder('Read', 'https://line.me'),
                         new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Seksual di Tempat Kerja', 'Tips', $imageUrl1, [
+                        new UriTemplateActionBuilder('Read', 'https://line.me'),
                         new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
                 ]);
