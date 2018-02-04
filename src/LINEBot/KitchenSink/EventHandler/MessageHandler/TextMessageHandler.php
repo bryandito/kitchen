@@ -117,19 +117,19 @@ class TextMessageHandler implements EventHandler
             case 'menu':
                 $imageUrl1 ='https://i.pinimg.com/736x/1e/48/6c/1e486c580947e82713415c556670fcf9--pin-up-tattoos-pinup-rockabilly.jpg';
                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
-                    new CarouselColumnTemplateBuilder('foo', 'bar', $imageUrl, [
+                    new CarouselColumnTemplateBuilder('foo', 'bar', $imageUrl1, [
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
                         new PostbackTemplateActionBuilder('Buy', 'action=buy&itemid=123'),
                     ]),
-                    new CarouselColumnTemplateBuilder('buz', 'qux', $imageUrl, [
+                    new CarouselColumnTemplateBuilder('buz', 'qux', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
                         new MessageTemplateActionBuilder('Say message', 'hello hello'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl, [
+                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
                         new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl, [
+                    new CarouselColumnTemplateBuilder('tanya', 'siapa', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
                         new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
