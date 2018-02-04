@@ -127,11 +127,11 @@ class TextMessageHandler implements EventHandler
                     ]),
                     new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan di Indonesia', 'Fenomena dan Tantangan', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        //new MessageTemplateActionBuilder('Say message', 'coba'),
+                        new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
                     new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Seksual di Tempat Kerja', 'siapa', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        //new MessageTemplateActionBuilder('Say message', 'coba'),
+                        new MessageTemplateActionBuilder('Say message', 'coba'),
                     ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
