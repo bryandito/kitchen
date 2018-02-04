@@ -121,13 +121,13 @@ class TextMessageHandler implements EventHandler
                         new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     new CarouselColumnTemplateBuilder('Setandar Operasional Prosedur Bagi Buruh', 'Apakabar?', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Next', 'action=add&itemid=123'),
+                        new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan di Indonesia', 'Fenomena & Tantangan', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Next', 'action=add&itemid=123'),
+                        new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan di Tempat Kerja', 'Tips', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Next', 'action=add&itemid=123'),
+                        new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                 ]);
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $carouselTemplateBuilder);
