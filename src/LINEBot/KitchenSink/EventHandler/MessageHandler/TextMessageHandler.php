@@ -118,16 +118,16 @@ class TextMessageHandler implements EventHandler
                 $imageUrl1 ='https://i.pinimg.com/736x/1e/48/6c/1e486c580947e82713415c556670fcf9--pin-up-tattoos-pinup-rockabilly.jpg';
                  $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan di Tempat Kerja', 'Angka dan Infografik', $imageUrl1, [
-                        new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
+                        new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     new CarouselColumnTemplateBuilder('SOP Bagi Buruh', 'Apakabar?', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                        new PostbackTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan', 'Fenomena & Tantangan', $imageUrl1, [
-                        new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
+                        new UriTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan', 'Tips', $imageUrl1, [
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
+                        new PostbackTemplateActionBuilder('Next', 'https://line.me'),
                     ]),
                     
                 ]);
