@@ -92,8 +92,8 @@ class TextMessageHandler implements EventHandler
                     new TemplateMessageBuilder(
                         'Confirm alt text',
                         new ConfirmTemplateBuilder('Menarik ya, kak! Tapi, apakah kakak suka dengan lingkungan kerja yang sekarang?', [
-                            new MessageTemplateActionBuilder('Yes', 'Yes!'),
-                            new MessageTemplateActionBuilder('No', 'No!'),
+                            new MessageTemplateActionBuilder('Yes', 'Oke'),
+                            new MessageTemplateActionBuilder('No', 'Kenapa?'),
                         ])
                     )
                 );
