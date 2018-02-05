@@ -120,13 +120,13 @@ class TextMessageHandler implements EventHandler
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan di Tempat Kerja', 'Angka dan Infografik', $imageUrl1, [
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
                     ]),
-                    new CarouselColumnTemplateBuilder('tandar Operasional Prosedur Bagi Buruh', 'Apakabar?', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('SOP Bagi Buruh', 'Apakabar?', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
                     ]),
-                    new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan di Indonesia', 'Fenomena & Tantangan', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan', 'Fenomena & Tantangan', $imageUrl1, [
                         new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
                     ]),
-                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan di Tempat Kerja', 'Tips', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan', 'Tips', $imageUrl1, [
                         new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
                     ]),
                     
