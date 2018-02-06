@@ -103,7 +103,7 @@ class TextMessageHandler implements EventHandler
                 $buttonTemplateBuilder = new ButtonTemplateBuilder(
                     'Si Emak',
                     'Kenapa nak?',
-                    'https://pre00.deviantart.net/f286/th/pre/i/2013/113/4/b/ra_kartini_in_wpap_by_ihsanulhakim-d62pkfh.jpg',
+                    'https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27459760_100433814113288_4986703225466090903_n.jpg?oh=7449557fb110f8f7f1d95f196e738f1b&oe=5B24959E',
                     [
                         new UriTemplateActionBuilder('Telephone Penting', 'http://www.organisasi.org/1970/01/nomor-telepon-penting-dan-nomer-telepon-darurat-nasional-di-indonesia.html#.Wnla8-dlPIU'),
                         new UriTemplateActionBuilder('Polisi Terdekat', 'https://line.me'),
