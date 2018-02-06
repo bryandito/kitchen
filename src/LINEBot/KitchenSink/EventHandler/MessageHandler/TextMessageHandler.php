@@ -86,14 +86,14 @@ class TextMessageHandler implements EventHandler
                 }
                 $this->bot->replyText($replyToken, 'Bot cannot leave from 1:1 chat');
                 break;
-            case 'confirm':
+            case 'acara':
                 $this->bot->replyMessage(
                     $replyToken,
                     new TemplateMessageBuilder(
                         'Confirm alt text',
-                        new ConfirmTemplateBuilder('Menarik ya, kak! Tapi, apakah kakak suka dengan lingkungan kerja yang sekarang?', [
-                            new MessageTemplateActionBuilder('Yes', 'Oke'),
-                            new MessageTemplateActionBuilder('No', 'Kenapa?'),
+                        new ConfirmTemplateBuilder('kak,besok tanggal 1 Mei Sisi mengundang kakak ikut acara di Monas.. Kakka bisa datang?', [
+                            new MessageTemplateActionBuilder('Bisa', 'Oke'),
+                            new MessageTemplateActionBuilder('Maaf Belom Bisa', 'Kenapa?'),
                         ])
                     )
                 );
@@ -107,7 +107,7 @@ class TextMessageHandler implements EventHandler
                     [
                         new UriTemplateActionBuilder('Telephone Penting', 'http://www.organisasi.org/1970/01/nomor-telepon-penting-dan-nomer-telepon-darurat-nasional-di-indonesia.html#.Wnla8-dlPIU'),
                         new UriTemplateActionBuilder('Polisi Terdekat', 'https://line.me'),
-                        new MessageTemplateActionBuilder('Menu Help','sos= Untuk keadaan darurat''menu= Untuk mengetahui info-info penting tentang Sisi'),
+                        new MessageTemplateActionBuilder('Menu Help','sos= Untuk keadaan darurat, menu= untuk mengetahui lebih dalam tentang sisi, profile=untuk mengetahui nama asli teman sisi di Line, acara= untuk mengkonfirmasi kikutsertaan dalam acara yang diadakan oleh sisi'),
                     ]
                 );
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
