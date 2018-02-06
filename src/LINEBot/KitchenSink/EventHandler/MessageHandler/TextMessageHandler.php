@@ -107,7 +107,7 @@ class TextMessageHandler implements EventHandler
                     [
                         new UriTemplateActionBuilder('Telephone Penting', 'http://www.organisasi.org/1970/01/nomor-telepon-penting-dan-nomer-telepon-darurat-nasional-di-indonesia.html#.Wnla8-dlPIU'),
                         new UriTemplateActionBuilder('Polisi Terdekat', 'https://line.me'),
-                        new MessageTemplateActionBuilder('Menu Help','sos= Untuk keadaan darurat /n asdfasdfa'),
+                        new MessageTemplateActionBuilder('Menu Help','sos= Untuk keadaan darurat''menu= Untuk mengetahui info-info penting tentang Sisi'),
                     ]
                 );
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
