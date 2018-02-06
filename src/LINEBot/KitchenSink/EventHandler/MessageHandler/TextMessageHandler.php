@@ -113,18 +113,17 @@ class TextMessageHandler implements EventHandler
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
                 $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
-            case 'bagi':
-                $imageUrl = UrlBuilder::buildUrl($this->req, ['static', 'buttons', '1040.jpg']);
-                $buttonTemplateBuilder = new ButtonTemplateBuilder(
-                    'Yuk sharing!',
-                    'https://www.w3trainingschool.com/wp-content/uploads/2016/02/Digital-Marketing-Course-in-Gurgaon1.png',
-                    [
-                        new UriTemplateActionBuilder('Agenda: Kumpul Tani', 'https://www.instagram.com/pasarpetanikota/'),
-                        new UriTemplateActionBuilder('Omongin aja!', 'https://www.instagram.com/sidebotline/'),
-                    ]
+                case 'bagi':
+                $this->bot->replyMessage(
+                    $replyToken,
+                    new TemplateMessageBuilder(
+                        'Confirm alt text',
+                        new ConfirmTemplateBuilder('Yuk ke tempat ngumpul para petani kota se-Jabodetabek! Bakal ada workship, bazar, dan bincang2 edukasi kak setiap bulannya. Yuk ikuti https://www.instagram.com/pasarpetanikota/ atau hubungi Whatsapp di 087841568322', [
+                             new UriTemplateActionBuilder('Agenda: Kumpul Tani', 'https://www.instagram.com/pasarpetanikota/'),
+                             new UriTemplateActionBuilder('Omongin aja!', 'https://www.instagram.com/sidebotline/'),
+                        ])
+                    )
                 );
-                $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
-                $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
             case 'menu':
                 $imageUrl1 ='https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27655508_100433134113356_2707088780596371726_n.jpg?oh=5546a9b9bfb0027f5c751988aa166895&oe=5B1C65A8';
