@@ -93,7 +93,7 @@ class TextMessageHandler implements EventHandler
                         'Confirm alt text',
                         new ConfirmTemplateBuilder('kak,besok tanggal 1 Mei Sisi mengundang kakak ikut acara di Monas.. Kakka bisa datang?', [
                             new MessageTemplateActionBuilder('Bisa', 'Oke'),
-                            new MessageTemplateActionBuilder('Maaf Belom Bisa', 'Kenapa?'),
+                            new MessageTemplateActionBuilder('Maaf Belom Bisa', 'Blm bisa datang'),
                         ])
                     )
                 );
