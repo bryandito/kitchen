@@ -98,17 +98,16 @@ class TextMessageHandler implements EventHandler
                     )
                 );
                 break;
-            case 'buttons':
+            case 'sos':
                 $imageUrl = UrlBuilder::buildUrl($this->req, ['static', 'buttons', '1040.jpg']);
                 $buttonTemplateBuilder = new ButtonTemplateBuilder(
-                    'My button sample',
-                    'Hello my button',
+                    'Si Emak',
+                    'Kenapa nak?',
                     'https://pre00.deviantart.net/f286/th/pre/i/2013/113/4/b/ra_kartini_in_wpap_by_ihsanulhakim-d62pkfh.jpg',
                     [
-                        new UriTemplateActionBuilder('Go to line.me', 'https://line.me'),
-                        new PostbackTemplateActionBuilder('Buy', 'action=buy&itemid=123'),
-                        new PostbackTemplateActionBuilder('Add to cart', 'action=add&itemid=123'),
-                        new MessageTemplateActionBuilder('Say help','help'),
+                        new UriTemplateActionBuilder('Nomor Telephone Penting', 'http://www.organisasi.org/1970/01/nomor-telepon-penting-dan-nomer-telepon-darurat-nasional-di-indonesia.html#.Wnla8-dlPIU'),
+                        new UriTemplateActionBuilder('Polisi Terdekat', 'https://line.me'),
+                        new MessageTemplateActionBuilder('Menu Help','sos= Untuk keadaan darurat /n asdfasdfa'),
                     ]
                 );
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
