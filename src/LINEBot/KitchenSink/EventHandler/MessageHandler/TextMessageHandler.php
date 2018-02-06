@@ -121,7 +121,7 @@ class TextMessageHandler implements EventHandler
                         new UriTemplateActionBuilder('Next', 'https://www.youtube.com/watch?v=wX54cYgqr1g'),
                     ]),
                     new CarouselColumnTemplateBuilder('SOP Bagi Buruh', 'Apakabar?', $imageUrl1, [
-                        new UriTemplateActionBuilder('Next', 'https://line.me'),
+                        new UriTemplateActionBuilder('Next', 'https://www.rappler.com/indonesia/131392-catatan-kelam-buruh-perempuan-2016'),
                     ]),
                     new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan', 'Fenomena & Tantangan', $imageUrl1, [
                         new UriTemplateActionBuilder('Next', 'https://line.me'),
