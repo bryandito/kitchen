@@ -113,6 +113,19 @@ class TextMessageHandler implements EventHandler
                 $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
                 $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
+            case 'bagi':
+                $imageUrl = UrlBuilder::buildUrl($this->req, ['static', 'buttons', '1040.jpg']);
+                $buttonTemplateBuilder = new ButtonTemplateBuilder(
+                    'Sharing ria,kak...Yuk ke tempat ngumpul para petani kota se-Jabodetabek! Bakal ada workship, bazar, dan bincang2 edukasi kak setiap bulannya. Ikuti https://www.instagram.com/pasarpetanikota/ atau hubungi Whatsapp di 087841568322 ',
+                    'https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27459760_100433814113288_4986703225466090903_n.jpg?oh=7449557fb110f8f7f1d95f196e738f1b&oe=5B24959E',
+                    [
+                        new UriTemplateActionBuilder('Agenda', 'https://www.instagram.com/pasarpetanikota/'),
+                        new UriTemplateActionBuilder('Omongin aja!', 'https://www.instagram.com/sidebotline/'),
+                    ]
+                );
+                $templateMessage = new TemplateMessageBuilder('Button alt text', $buttonTemplateBuilder);
+                $this->bot->replyMessage($replyToken, $templateMessage);
+                break;
             case 'menu':
                 $imageUrl1 ='https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27655508_100433134113356_2707088780596371726_n.jpg?oh=5546a9b9bfb0027f5c751988aa166895&oe=5B1C65A8';
                 $imageUrl2 ='https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27657884_100433577446645_4074727246332329759_n.jpg?oh=6829c476aed4640477ab98f205caeb42&oe=5AD97A74';
