@@ -116,10 +116,10 @@ class TextMessageHandler implements EventHandler
             case 'bagi':
                 $imageUrl = UrlBuilder::buildUrl($this->req, ['static', 'buttons', '1040.jpg']);
                 $buttonTemplateBuilder = new ButtonTemplateBuilder(
-                    'Yuk kumpul para petani kota se-Jabodetabek! Bakal ada workship, bazar, dan bincang2 edukasi kak setiap bulannya. Ikuti https://www.instagram.com/pasarpetanikota/ atau hubungi Whatsapp di 087841568322',
+                    'Yuk sharing!',
                     'https://www.w3trainingschool.com/wp-content/uploads/2016/02/Digital-Marketing-Course-in-Gurgaon1.png',
                     [
-                        new UriTemplateActionBuilder('Agenda', 'https://www.instagram.com/pasarpetanikota/'),
+                        new UriTemplateActionBuilder('Agenda: Kumpul Tani', 'https://www.instagram.com/pasarpetanikota/'),
                         new UriTemplateActionBuilder('Omongin aja!', 'https://www.instagram.com/sidebotline/'),
                     ]
                 );
