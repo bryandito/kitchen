@@ -105,7 +105,7 @@ class TextMessageHandler implements EventHandler
                     'Kenapa nak?',
                     'https://pre00.deviantart.net/f286/th/pre/i/2013/113/4/b/ra_kartini_in_wpap_by_ihsanulhakim-d62pkfh.jpg',
                     [
-                        new UriTemplateActionBuilder('Nomor Telephone Penting', 'http://www.organisasi.org/1970/01/nomor-telepon-penting-dan-nomer-telepon-darurat-nasional-di-indonesia.html#.Wnla8-dlPIU'),
+                        new UriTemplateActionBuilder('Telephone Penting', 'http://www.organisasi.org/1970/01/nomor-telepon-penting-dan-nomer-telepon-darurat-nasional-di-indonesia.html#.Wnla8-dlPIU'),
                         new UriTemplateActionBuilder('Polisi Terdekat', 'https://line.me'),
                         new MessageTemplateActionBuilder('Menu Help','sos= Untuk keadaan darurat /n asdfasdfa'),
                     ]
