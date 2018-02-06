@@ -114,18 +114,21 @@ class TextMessageHandler implements EventHandler
                 $this->bot->replyMessage($replyToken, $templateMessage);
                 break;
             case 'menu':
-                $imageUrl1 ='https://i.pinimg.com/736x/1e/48/6c/1e486c580947e82713415c556670fcf9--pin-up-tattoos-pinup-rockabilly.jpg';
-                 $carouselTemplateBuilder = new CarouselTemplateBuilder([
+                $imageUrl1 ='https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27459379_100432780780058_1793506443162679450_n.jpg?oh=032bc4690a5e4ea692ad6f496e6d12a0&oe=5B115746';
+                $imageUrl2 ='https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27657884_100433577446645_4074727246332329759_n.jpg?oh=6829c476aed4640477ab98f205caeb42&oe=5AD97A74';
+                $imageUrl3 ='https://www.facebook.com/photo.php?fbid=100432780780058&set=a.100321334124536.1073741826.100024400080353&type=3&theater';
+                $imageUrl4 ='https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/27750093_100321317457871_5272130745536382177_n.jpg?oh=d56098310228d1df0791618bcbd4a70a&oe=5B143F88';
+                $carouselTemplateBuilder = new CarouselTemplateBuilder([
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan di Tempat Kerja', 'Angka dan Infografik', $imageUrl1, [
                         new UriTemplateActionBuilder('Next', 'https://www.youtube.com/watch?v=wX54cYgqr1g'),
                     ]),
-                    new CarouselColumnTemplateBuilder('SOP Bagi Buruh.Apakabar?', 'Berita', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('SOP Bagi Buruh.Apakabar?', 'Berita', $imageUrl2, [
                         new UriTemplateActionBuilder('Next', 'https://www.rappler.com/indonesia/131392-catatan-kelam-buruh-perempuan-2016'),
                     ]),
-                    new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan', 'Fenomena & Tantangan', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan', 'Fenomena & Tantangan', $imageUrl3, [
                         new UriTemplateActionBuilder('Next', 'http://www.konde.co/2018/01/berjuang-untuk-ruang-laktasi-di-tempat.html'),
                     ]),
-                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan', 'Tips', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan', 'Tips', $imageUrl4, [
                         new UriTemplateActionBuilder('Next', 'https://kumparan.com/@kumparannews/membekali-diri-menghadapi-pelecehan-seksual'),
                     ]),
                     
