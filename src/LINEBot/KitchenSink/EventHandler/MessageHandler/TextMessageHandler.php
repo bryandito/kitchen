@@ -120,14 +120,14 @@ class TextMessageHandler implements EventHandler
                     new CarouselColumnTemplateBuilder('Kekerasan Perempuan di Tempat Kerja', 'Angka dan Infografik', $imageUrl1, [
                         new UriTemplateActionBuilder('Next', 'https://www.youtube.com/watch?v=wX54cYgqr1g'),
                     ]),
-                    new CarouselColumnTemplateBuilder('SOP Bagi Buruh', 'Apakabar?', $imageUrl1, [
+                    new CarouselColumnTemplateBuilder('SOP Bagi Buruh.Apakabar?', 'Berita', $imageUrl1, [
                         new UriTemplateActionBuilder('Next', 'https://www.rappler.com/indonesia/131392-catatan-kelam-buruh-perempuan-2016'),
                     ]),
                     new CarouselColumnTemplateBuilder('Pemenuhan Hak-Hak Buruh Perempuan', 'Fenomena & Tantangan', $imageUrl1, [
-                        new UriTemplateActionBuilder('Next', 'https://line.me'),
+                        new UriTemplateActionBuilder('Next', 'http://www.konde.co/2018/01/berjuang-untuk-ruang-laktasi-di-tempat.html'),
                     ]),
                     new CarouselColumnTemplateBuilder('Mengakhiri Kekerasan Perempuan', 'Tips', $imageUrl1, [
-                        new UriTemplateActionBuilder('Next', 'https://line.me'),
+                        new UriTemplateActionBuilder('Next', 'https://kumparan.com/@kumparannews/membekali-diri-menghadapi-pelecehan-seksual'),
                     ]),
                     
                 ]);
